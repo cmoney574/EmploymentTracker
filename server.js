@@ -225,7 +225,7 @@ function updateEmployees() {
                 choices: rChoices
               }
             ])
-              .then(res => db.updateEmployee(eId, res.rId))
+              .then(res => db.updateEmployee(res.rId, eId))
               .then(() => console.log("Updated employee's role"))
               .then(() => viewEmployees())
           });
