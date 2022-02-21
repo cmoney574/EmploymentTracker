@@ -126,7 +126,7 @@ function addEmployees() {
             prompt({
                 type: "list",
                 name: "rId",
-                message: "What is the employee's role?",
+                message: "Employee role:",
                 choices: rChoices
               })
               .then(res =>{
@@ -226,7 +226,7 @@ function updateEmployees() {
               }
             ])
               .then(res => db.updateEmployee(res.rId, eId))
-              .then(() => console.log("Updated employee's role"))
+              .then(() => console.log("Updated employee"))
               .then(() => viewEmployees())
           });
       })
