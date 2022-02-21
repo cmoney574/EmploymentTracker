@@ -221,7 +221,7 @@ function updateEmployees() {
               {
                 type: "list",
                 name: "rId",
-                message: "What is the employee's new role?",
+                message: "Select New Role:",
                 choices: rChoices
               }
             ])
